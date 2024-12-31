@@ -6,6 +6,10 @@ from sklearn.datasets import load_iris
 import mlflow
 import mlflow.sklearn
 import os
+import joblib
+
+# Set the MLflow tracking URI
+mlflow.set_tracking_uri("http://localhost:5000")
 
 # Set up MLflow experiment
 mlflow.set_experiment("Iris Dataset Experiment")
@@ -38,5 +42,4 @@ with mlflow.start_run():
 
     # Save the model locally (optional)
     os.makedirs("outputs", exist_ok=True)
-    import joblib
     joblib.dump(model, "outputs/random_forest_model.pkl")
