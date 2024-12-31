@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/198217098402065632
+creation_time: 1735634765845
+experiment_id: '198217098402065632'
+last_update_time: 1735634765845
+lifecycle_stage: active
+name: Iris Dataset Experiment

@@ -12,7 +12,7 @@ import joblib
 mlflow.set_tracking_uri("http://localhost:5000")
 
 # Set up MLflow experiment
-mlflow.set_experiment("Iris Dataset Experiment")
+mlflow.set_experiment("Iris Dataset Experiment1")
 
 with mlflow.start_run():
     # Load the Iris dataset
